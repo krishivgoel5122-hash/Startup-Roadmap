@@ -1,0 +1,429 @@
+/* =========================
+   RESET & BASE
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  line-height: 1.65;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #0f172a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar strong {
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.navbar nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar nav a:hover {
+  color: #ffffff;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.container {
+  max-width: 1100px;
+  margin: 70px auto;
+  padding: 0 32px;
+}
+
+/* =========================
+   HERO SECTIONS
+========================= */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.home-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-right img {
+  width: 80%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 16px;
+}
+
+
+
+/* Home Hero */
+.home-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.home-left h1 {
+  font-size: 48px;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.hero img {
+  width: 75%;         
+  max-width: 500px;   
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto;     
+}
+
+.home-right {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* =========================
+   TEXT STYLES
+========================= */
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 17px;
+  max-width: 720px;
+}
+
+.subtext {
+  color: #475569;
+  font-size: 16px;
+}
+
+.lead {
+  font-size: 18px;
+  margin-top: 16px;
+  color: #334155;
+}
+
+/* =========================
+   BADGES, BUTTONS, CTA
+========================= */
+.badge {
+  display: inline-block;
+  background: #eef2ff;
+  color: #2563eb;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 12px 26px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background-color: #1e40af;
+}
+
+.secondary-button {
+  padding: 12px 24px;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* =========================
+   INFO & CONTENT BLOCKS
+========================= */
+.info-box {
+  margin-top: 22px;
+  padding: 20px;
+  background-color: #eef2ff;
+  border-left: 5px solid #2563eb;
+  border-radius: 6px;
+}
+
+.section-block {
+  margin-top: 60px;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* =========================
+   PROMPTS / REFLECTIONS
+========================= */
+.prompt {
+  margin-top: 20px;
+  padding: 18px;
+  background: #eef2ff;
+  border-radius: 8px;
+}
+
+.prompt strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* =========================
+   QUIZ STYLES (OLD - preserved)
+========================= */
+.quiz button {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5f5;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.quiz button:hover {
+  background: #e0e7ff;
+}
+
+.quiz-result {
+  margin-top: 14px;
+  font-weight: 600;
+}
+
+/* =========================
+   STAGE PREVIEW (HOME)
+========================= */
+.stage-preview {
+  margin-top: 90px;
+}
+
+.stage-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.stage-card {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+}
+
+/* =========================
+   STATS (HOME)
+========================= */
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.stats strong {
+  font-size: 26px;
+}
+
+.stats span {
+  display: block;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  margin-top: 90px;
+  padding: 22px;
+  text-align: center;
+  background-color: #e5e7eb;
+  font-size: 14px;
+  color: #334155;
+}
+
+/* =========================
+   ADVANCED QUIZ STYLING
+========================= */
+
+.advanced-quiz {
+  margin-top: 60px;
+}
+
+.question-card {
+  background: linear-gradient(145deg, #ffffff, #f3f6ff);
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-4px);
+}
+
+.question-card p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.option-btn {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #dbeafe;
+  background: #f8fafc;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.25s ease;
+  text-align: left;
+}
+
+.option-btn:hover {
+  background: #e0e7ff;
+  border-color: #2563eb;
+  transform: scale(1.02);
+}
+
+.option-btn.correct {
+  background: #dcfce7;
+  border-color: #16a34a;
+  color: #065f46;
+}
+
+.option-btn.wrong {
+  background: #fee2e2;
+  border-color: #dc2626;
+  color: #7f1d1d;
+}
+
+.hint {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #dc2626;
+  min-height: 20px;
+}
+
+/* =========================
+   POPUP MODAL
+========================= */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.65);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  width: 420px;
+  max-width: 90%;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+  animation: popupFade 0.3s ease forwards;
+}
+
+.popup-box h4 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.popup-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.popup-box button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.popup-box button:hover {
+  background: #1e40af;
+}
+
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
